@@ -1,0 +1,40 @@
+# RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS
+
+Data: 24/05/2026
+Empresa: Ficticio Farm  
+Responsável: Luciana Faria
+
+## Introdução
+Este relatório apresenta o processo de implementação de ferramentas na empresa Ficticio Farm, realizado por Luciana Faria. O objetivo do projeto foi elencar 3 serviços AWS, com a finalidade de realizar diminuição de custos imediatos.
+
+## Descrição do Projeto
+O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma com seus objetivos especÃ­ficos. A seguir, serão descritas as etapas do projeto:
+
+Etapa 1: 
+- Nome da Ferramenta: Amazon EC2 + Auto Scaling + Elastic Load Balancing
+- Foco da ferramenta: Eliminacao de servidores fisicos e licencas de infraestrutura
+- Descrição de caso de uso: A indústria farmacêutica mantém servidores fisicos superdimensionados para suportar picos de carga nos dias de maior movimento. Nos demais dias o hardware fica ocioso, mas com os mesmos custos de energia, refrigeração, manutenção, depreciação, entre outros. A migração para o EC2 vai permitir pagamento conforme o uso de recursos, o Auto Scaling vai ajustar o número de instancias conforme a demanda for aumentando ou diminuindo. O Elastic Load Balancing vai distribuir o trafego entre as instancias durante os momentos de pico, garantindo a disponibilidade, evitando uso de servidores parados ou de reserva. Esta proposta eliminará investimentos em hardware e substituirá os mesmos por custos operacionais mensais, liberando o valor imobilizado em equipamentos. Estimamos uma redução de custos de pelo menos 30% nestes servidores.
+
+Etapa 2: 
+- Nome da ferramenta: Amazon S3 + Amazon RDS
+- Foco da ferramenta: Substituir storages fisicos e servidores de BD locais
+- Descrição de caso de uso: Hoje existe acumulo de dados obrigatórios e legais como laudos, dossies, ensaios clinicos, entre outros, que exigem storages físicos caros, com redundância e altos custos de backups. A migração para o S3 vai eliminar esse hardware, tornar o armazenamento ilimitado e com custos proporcionais ao volume de dados utilizado. Outro benefício será a facilidade de gestão do ciclo de vida dos dados e de retenção com custos menores. A migração dos BD locais para o Amazon RDS vai eliminar também os custos de licenciamento de banco de dados on-premises, custos de hardware dedicado, além disso teremos backups automatizados a alta disponibilidade dos serviços já incluida nos custos. Estimamos uma redução de pelo menos 45% nos custos de armazenamento e BD.
+
+Etapa 3: 
+- Nome da ferramenta: AWS Lambda + Mensageria (SQS / SNS)
+- Foco da ferramenta: Substituir servidores de integração e processamento batch
+- Descrição de caso de uso: Processos como geração de laudos, integração de sistemas entre outros são executados por servidores de aplicação locais ligados 24 horas por dia. Mesmo sem processamento nos finais de semana ou durante o periodo noturno. a adoção de Lambda com filas SQS e topicos SNS vai permitir que esses sejam executados apenas quando acionados por um evento como uma requisição na aplicação, uma solicitação de relatório, um arquivo, entre outros. Isso vai levar o custo a ser aplicado somente na execução efetiva dos processos. Vai eliminar servidor de integração on-premisses, energia para manter ele ligado, manutenção, além de eliminar servidores para serem gerenciados. Estimamos redução de pelo menos 80% no custo destes servidores.
+
+## Conclusão
+A implementação de ferramentas na empresa Ficticio Farm tem como esperado a eliminação do modelo de infraestrutura baseada em investimentos e imobilização de capital com a substituição para o modelo OPEX mensal e variável, com custos variando conforme o uso dos recursos de TI. Vamos extinguir servidores superdimensionados e custos ocultos de energia e manutenção, gerar custos conforme o volume de dados processados, fazer com que custos fixos se tornem quase nulos nos periodos sem processamento. Estimamos uma reducao do custo total de processamento de TI na faixa de 40%, com ganhos de disponibilidade, conformidade com frameworks de seguranca e conformidade regulatória, evitaremos ciclos de investimentos em hardware e traremos um benef~icio de liberar a equipe de TI para focar mais em inovação e menos em sustentação. Isso aumentará a eficiência e a produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+
+## Anexos
+
+Segue abaixo links que relatam cases similares ao da Ficticio Farm onde as empresas comprovam que conseguiram migrar para Cloud AWS e ter vários ganhos inclusive financeiros.
+PFIZER: https://intuitionlabs.ai/articles/aws-in-pharma-industry
+Vertex Pharmaceuticals: https://aws.amazon.com/solutions/case-studies/vertex-pharmaceuticals-distributed-map/
+Johnson & Johnson: https://aws.amazon.com/solutions/case-studies/johnson-and-johnson-ebs-case-study/
+
+Assinatura do Responsável pelo Projeto:
+
+Nome do Responsável pelo Projeto: Luciana Faria
